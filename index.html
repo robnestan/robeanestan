@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio Website ni RoBean</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/8a11fcc6bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">  
+    <div class="container">  
+        <nav> 
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">                
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>IT Enthusiast</p>
+            <h1>Hi, I'm <span>Robyn</span><br>Estanislao from Kalibo</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ----------about----------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, Robyn Estanislao here! I'm an IT enthusiast from Kalibo, Aklan, Philippines. 
+                I am a student of STI Kalibo and currently studying Bachelor of Science in Information Technology. 
+                I like Dogs and playing Basketball. I also like Burgers!</p>
+                <div class="tab-titles">
+                    <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-link" onclick="opentab('education')">Education</p>  
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Servers</span><br>-Microsoft Windows Server</li>
+                        <li><span>Programming</span><br>-Java<br>-Python<br>-C#</li>
+                        <li><span>Network</span><br>-Wide Area Network Set Up and Maintenance<br>-Local Area set up and Maintenance
+                        <br>-Router Configuration</li>
+                        <li><span>Desktop Support</span><br>-Microsoft Windows Operating System<br>-Linux Operating System
+                        <br>-Android Operating System</li>
+                        <li><span>Database Management System</span><br>-Microsoft SQL Server Management Studio 18<br>-MongoDB</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Internship at Philippines Statistic Authority (Aklan)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018 - Current</span><br>STI College Kalibo</li>
+                        <li><span>2016 - 2018</span><br>Garcia College of Technology</li>
+                        <li><span>2012 - 2016</span><br>Wadeford School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------services----------- -->
+
+<div id="services"></div>
+
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list" >
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Code</h2>
+                <p>Minor local Application and Web development</p>
+             
+    
+            </div>
+                
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Network</h2>
+                <p>Planning and Implementation</p>
+              
+            </div>
+
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Hardware & Software</h2>
+                <p>Setup, configuration and maintenance</p>
+           
+            </div>              
+            
+            <div>                
+                <i class="fa-regular fa-floppy-disk"></i>
+                <h2>Back-Up Automation</h2>
+                <p>On-site and Off-site backup to ensure data integrity</p>
+                
+            </div>
+        </div>
+        <div class="services-listmore">
+            <div>
+                <i class="fa-brands fa-linux"></i>
+                <h2>Linux</h2>
+                <p>Android & Linux Computer Support</p>
+              
+            </div>
+
+            <div>
+                <i class="fa-brands fa-windows"></i>
+                <h2>Windows</h2>
+                <p>Windows XP, 7, Vista, 8 & 10, Server Support</p>
+               
+            </div>
+
+            <div>
+                <i class="fa-regular fa-lightbulb"></i>
+                <h2>Digital Solutions</h2>
+                <p>Develop ideas answer to your problems</p>
+          
+            </div>
+
+            <div>
+                <i class="fa-sharp fa-solid fa-house-laptop"></i>
+                <h2>Remote Support</h2>
+                <p>Helping you fix problems via the internet</p>
+               
+            </div>
+
+            <div>   
+                <i class="fa-solid fa-calendar-days"></i>
+                <h2>On-Call IT</h2>
+                <p>Schedule an On-Site IT support</p>
+               
+            </div>
+
+            <div>
+                <i class="fa-solid fa-copy"></i>
+                <h2>Open Source</h2>
+                <p>I prefer to use Open-Source software. It's Free!</p>
+                         
+            </div>  
+        </div>     
+      <!-- <a href="" class="btn3">Load More</a> -->
+    </div>
+</div>
+
+
+<!-- ----------contacts----------- -->
+
+<div id="contacts">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>robynestanislao1@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>09999469763</p>
+            <p><i class="fa-solid fa-phone"></i>09071868130</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/xTrak30"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/robyn-estanislao-688475272/"><i class="fa-brands fa-linkedin"></i>></a>              
+            </div>
+            <a href="https://drive.google.com/drive/u/1/my-drive" class="btn">Credentials</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="`text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn2">Submit</button> 
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyrights">
+    <p>Copyrights © //RoBean. Made by Robyn T. Estanislao <i class="fa-solid fa-feather"></i></p>
+</div>
+</div>
+
+
+<script>
+    
+var tablinks = document.getElementsByClassName("tab-link");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")   
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");      
+    } 
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+       sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";     
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz3HdBECWkftfsQabn-0Wt_2LByfYbLl522v1kemBs-4C7SnZ46OseRCXE1t1n7pTcEgw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucesfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
